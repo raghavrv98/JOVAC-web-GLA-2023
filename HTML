@@ -1,0 +1,780 @@
+==============================================================================================================================
+
+## <!-- HTML CRASH COURSE -->
+
+## ALL HTML things under one roof -->
+
+https://quickref.me/html.html
+
+## Terminology for HTML
+
+HTML (Hypertext Markup Language) is the standard markup language for creating web pages.
+
+## Here are some common terminology related to HTML:
+
+Tags: HTML tags are used to mark up elements and structure the content of a web page. They are enclosed in angle brackets (<>) and usually come in pairs:
+an opening tag and a closing tag.
+
+Elements: HTML elements consist of an opening tag, content, and a closing tag. They define the structure and semantics of different parts of a web page.
+
+Attributes: HTML attributes provide additional information about elements and are placed within the opening tag. They specify various properties or behaviors of elements.
+
+Head: The <head> element is part of an HTML document and contains meta-information about the page, such as the title, links to external stylesheets or scripts, and other metadata.
+
+Body: The <body> element contains the visible content of a web page, including text, images, links, headings, paragraphs, and other elements.
+
+Heading tags: HTML provides six heading tags, from <h1> to <h6>, which are used to define hierarchical headings. <h1> represents the highest level of heading, while <h6> represents the lowest level.
+
+Paragraphs: Paragraphs are represented by the <p> tag and are used to group blocks of text together.
+
+Links: Links are created using the <a> (anchor) tag and allow users to navigate to other web pages, files, or locations within the same page.
+
+Lists: HTML offers two types of lists: ordered lists (<ol>) and unordered lists (<ul>). Ordered lists display items with numbers or other symbols indicating their order, while unordered lists display items with bullet points.
+
+Images: Images are inserted into HTML using the <img> tag and require the "src" attribute to specify the image file's URL.
+
+Tables: Tables are created using the <table> tag and consist of rows (<tr>) and cells (<td>) to organize data into a grid-like structure.
+
+Forms: Forms are used to collect user input and are created with the <form> tag. They contain various input fields, such as text boxes, checkboxes, radio buttons, and buttons.
+
+CSS: While not part of HTML itself, CSS (Cascading Style Sheets) is closely related. CSS is used to style and format HTML elements, controlling their appearance and layout on the web page.
+
+==============================================================================================================================
+
+## HISTORY of HTML
+
+Q. The first version of HTML was written by Tim Berners-Lee in 1993.
+Since then, there have been many different versions of HTML.
+The most widely used version throughout the 2000's was HTML 4.01, which became an official standard in December 1999.
+Now the latest version we are using is HTML5.
+
+==============================================================================================================================
+
+## Q. Why HTML is invented?
+
+HTML was developed specifically to support linking among online resources.
+Compared with other digital formats used for primarily textual document-like content,
+the HTML format has been extended to support embedded audio and video and the development of interactive applications.
+
+==============================================================================================================================
+
+## Q. How many websites are being created every day?
+
+While there are 1.13 billion websites in the world, only a fraction of these are actively used and updated.
+Approximately 175 websites are created every minute.
+This means that there is a new website every 3 seconds.
+
+==============================================================================================================================
+
+## Q. What does HTML stand for?
+
+HTML, which stands for Hypertext Markup Language, is a standard markup language used for creating the structure and
+presentation of web pages. It provides a set of predefined elements and tags that define the various components and
+content within a web page. These elements can include headings, paragraphs, images, links, tables, forms, and more.
+
+Hypertext: Hypertext refers to a system of organizing and linking information in a non-linear way. It allows users to
+navigate between related pieces of information by clicking on hyperlinks.In HTML, hyperlinks are created using the <a>
+(anchor) tag and the href attribute to specify the destination URL. By clicking on a hyperlink, a user can jump to a
+different location within the same web page, to a different web page altogether, or even to a different section of a
+different web page. Hypertext enables the interconnectedness and dynamic navigation of content on the web.
+
+Markup: Markup refers to the use of tags and elements to annotate and structure content. In HTML, markup involves
+using specific tags to define the purpose and meaning of different elements within a web page. These tags are
+represented by angle brackets <> and are enclosed around content to indicate how it should be interpreted and
+displayed. For example, the <h1> tag is used to mark a heading, the <p> tag is used to mark a paragraph, and the
+<img> tag is used to mark an image. By using these tags and elements, HTML markup helps define the structure,
+organization, and presentation of content, allowing web browsers to understand and render the page correctly.
+
+The tags used in HTML serve as markup elements that structure the content and provide semantic meaning to
+different sections.
+
+In summary, hypertext allows for non-linear navigation and linking between web pages, while markup in HTML
+involves using tags and elements to structure and define the content within those pages. Together, hypertext and
+markup form the foundation of the web, enabling the creation of interconnected documents and the proper
+interpretation and presentation of web content.
+
+==============================================================================================================================
+
+## Q. What is the purpose of HTML in web development?
+
+HTML is the standard markup language used to create the skeleton or structure of web documents, defining the elements and their relationships.
+
+Here are the main purposes of HTML in web development:
+
+Structure: HTML provides a set of elements and tags that define the structure of a web page. It allows developers to organize content into sections, headings, paragraphs, lists, tables, forms, and more. By structuring content using HTML, web developers ensure logical organization and enhance the accessibility and readability of web pages.
+
+Semantics: HTML includes a range of semantic elements that give meaning to different parts of the web page. Semantic elements like <header>, <nav>, <main>, <article>, <section>, <aside>, and <footer> provide context and clarity to both developers and web browsers. They help search engines understand the structure and meaning of the content, which can improve search engine optimization (SEO) and accessibility.
+
+Content Presentation: HTML defines how content is presented on a web page. It allows developers to apply formatting, styling, and layout using CSS (Cascading Style Sheets). HTML tags can specify headings, paragraphs, lists, images, links, and other visual elements, enabling developers to create a visually appealing and well-organized web page.
+
+Hyperlinking: HTML supports hyperlinks (or anchor links) that allow users to navigate between different web pages or sections within the same page. Links are created using the <a> (anchor) element and the href attribute. HTML enables the creation of clickable links, helping users navigate through websites and access related resources.
+
+Integration with Other Technologies: HTML can integrate with other web technologies such as CSS for styling and JavaScript for interactivity and dynamic content. HTML provides the foundation for incorporating these technologies into web pages, allowing developers to create rich and interactive web experiences.
+
+Document Object Model (DOM): The DOM is a programming interface for web documents. It represents the structure of an HTML document as a tree-like structure, allowing programs to dynamically access and modify the content and structure of a web page.
+
+==============================================================================================================================
+
+## Q. What are the basic components of an HTML document?
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+</head>
+
+<body>
+<script src="" async defer></script>
+</body>
+
+</html>
+
+## This is also called as a boiler plate for HTML.
+
+<html>: The <html> element serves as the root element of an HTML document. It contains all the other elements
+and components of the document.
+
+<head>: The <head> element is a container for metadata and other non-visible information about the document. It includes
+elements such as the document title, links to CSS stylesheets, scripts, character encoding declarations, and
+more.
+
+<body>: The <body> element contains the visible content of the web page. It encompasses elements like headings (<h1>-<h6>),
+paragraphs (<p>), images (<img>), links (<a>), lists (<ul>, <ol>, <li>), and other elements that make up
+the actual content displayed in the browser.
+
+<title>: The <title></title> tags are used in HTML to define the title of an HTML document. The text placed between the opening <title> tag and the closing </title> tag appears as the title of the webpage in the browser's title bar or tab.
+
+==============================================================================================================================
+
+## Q. what is the use of <meta charset="utf-8"> in html document?
+
+The <meta charset="utf-8"> tag is used to declare the character encoding for an HTML document.
+
+It provides instructions to the browser on how to interpret and display text in the document.
+
+UTF-8 encoding supports a wide range of characters, making it suitable for multilingual websites and applications.
+
+By specifying the character encoding as UTF-8, you can avoid potential issues with character rendering,
+garbled text, or incorrect display of special characters.
+
+==============================================================================================================================
+
+## Q. what is <meta name="description" content=""> ?
+
+The name attribute specifies the purpose or name of the meta tag, in this case, "description."
+The content attribute is used to provide the actual description text.
+
+Search engines often use the description meta tag to display a brief summary of the webpage in search results.
+It can help users get an idea of what the webpage is about before clicking on the link.
+Additionally, the description may be used by social media platforms or other services when displaying shared links.
+
+Including the description meta tag can enhance search engine optimization (SEO) by providing search engines
+with a clear understanding of the webpage's content.
+
+==============================================================================================================================
+
+## Q. what is <meta name="viewport" content="width=device-width, initial-scale=1">?
+
+The viewport meta tag is particularly important for responsive web design,
+where web pages adjust their layout and content based on the size and capabilities of the device being used to view them.
+
+Let's break down the content value of the viewport meta tag:
+
+width=device-width: This sets the width of the viewport to match the device's screen width.
+It ensures that the webpage adapts to the available width of the device, preventing the need for horizontal scrolling.
+
+initial-scale=1: This sets the initial zoom level of the webpage.
+A value of 1 indicates that the page should be displayed at a 1:1 scale,
+meaning it is displayed at its original size without any zooming.
+
+Including this meta tag helps ensure that the webpage is displayed properly
+and optimally on different mobile devices. It allows the webpage to adjust its layout,
+font sizes, and other visual aspects to fit the screen size and provide an improved user
+experience across various devices, including smartphones and tablets.
+
+==============================================================================================================================
+
+## Q. what is <link rel="stylesheet" href=""> ?
+
+The <link rel="stylesheet" href=""> is an HTML tag used to link an external CSS file to an HTML document.
+
+The rel attribute specifies the relationship between the current document and the linked resource,
+while the href attribute specifies the path or URL of the CSS file.
+
+==============================================================================================================================
+
+## Q. what is <script src="" async defer></script> ?
+
+The <script src="" async defer></script> tag is used to include external JavaScript files in an HTML document.
+
+Let's break down the attributes used in the <script> tag:
+
+src: The src attribute specifies the source (path or URL) of the JavaScript file to be included.
+You need to provide the path or URL of the external JavaScript file in this attribute.
+
+async: The async attribute is an optional attribute that tells the browser to load the script asynchronously.
+When the async attribute is present, the browser will continue to parse and render the HTML document while
+fetching and executing the script asynchronously. This can improve the page load performance.
+
+defer: The defer attribute is also an optional attribute that tells the browser to defer the execution of the script
+until after the HTML document has been completely parsed. The script will be executed in the order
+they appear in the HTML document. This can help ensure that the script doesn't interfere with the parsing and rendering of the HTML content.
+
+==============================================================================================================================
+
+==============================================================================================================================
+
+## DOCTYPE
+
+## Q. what if we do not provide DOCTYPE declaration in html documents?
+
+Document Type Declaration (DOCTYPE): The DOCTYPE declaration is placed at the very beginning of an HTML document
+and indicates the version of HTML being used. It helps the browser understand how to interpret and render the
+document.
+
+The <!DOCTYPE html> declaration is an HTML5 doctype declaration that specifies the document type
+and version of the HTML being used in an HTML document which helps the browser render the content
+correctly and apply the appropriate parsing rules.
+
+It's worth noting that the <!DOCTYPE html> declaration is case-insensitive and doesn't require any additional attributes or values.
+Simply including it as the first line of your HTML document is sufficient to indicate that you are using HTML5.
+
+If you do not provide a DOCTYPE declaration in an HTML page,
+the browser will render the page in a backward-compatible mode known as "quirks mode."
+In quirks mode, the browser attempts to mimic the behavior of older versions of HTML,
+which may have varying levels of support for modern standards.
+
+By providing the DOCTYPE declaration, you are specifying the version of HTML being used and enabling
+the browser to interpret the page in standards mode, also known as "standards-compliant mode."
+In this mode, the browser adheres to the HTML and CSS specifications more strictly, providing
+consistent behavior across different browsers and versions.
+
+Using a DOCTYPE declaration helps ensure that your web page is displayed correctly
+and consistently across various browsers and platforms.
+
+Including the DOCTYPE declaration at the beginning of your HTML document is considered a best practice
+and helps ensure proper rendering and compatibility.
+
+==============================================================================================================================
+
+## HTML ELEMENTS
+
+The HTML element is everything from the start tag to the end tag:
+<tagname>Content goes here...</tagname>
+Examples of some HTML elements:
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+
+## Nested HTML Elements
+
+HTML elements can be nested (this means that elements can contain other elements).
+All HTML documents consist of nested HTML elements.
+The following example contains four HTML elements (<html>, <body>, <h1> and <p>):
+
+## Empty HTML Elements
+
+HTML elements with no content are called empty elements.
+The <br> tag defines a line break, and is an empty element without a closing tag:
+
+HTML is Not Case Sensitive
+HTML tags are not case sensitive: <P> means the same as <p>.
+
+## Block and Inline elements
+
+## Block-level Elements" :
+
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Two commonly used block elements are: <p> and <div>.
+
+The <p> element defines a paragraph in an HTML document.
+
+The <div> element defines a division or a section in an HTML document.
+
+Here are the block-level elements in HTML:
+
+<div>
+<footer>
+<form>
+<h1>-<h6>
+<header>
+<hr>
+<li>
+<ol>
+<p>
+<pre>
+<section>
+<table>
+<nav>
+<ul>
+<video>
+<noscript>
+<fieldset>
+
+<address>
+<article>
+<aside>
+<blockquote>
+<canvas>
+<dd>
+<dl>
+<dt>
+<figcaption>
+<figure>
+<tfoot>
+<main>
+
+## Inline Elements :
+
+An inline element does not start on a new line.
+
+An inline element only takes up as much width as necessary.
+
+This is a <span> element inside a paragraph.
+<p><span></span></p>
+
+
+Here are the inline elements in HTML:
+
+<a>
+<br>
+<b>
+<button>
+<em>
+<i>
+<img>
+<input>
+<select>
+<span>
+<strong>
+<sub>
+<sup>
+<textarea>
+
+<abbr>
+<acronym>
+<bdo>
+<big>
+<cite>
+<code>
+<dfn>
+<kbd>
+<label>
+<map>
+<object>
+<output>
+<q>
+<samp>
+<script>
+<small>
+<time>
+<tt>
+<var>
+
+==============================================================================================================================
+
+## HTML ATTRIBUTES
+
+HTML attributes provide additional information about HTML elements.
+
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+
+## The href Attribute
+
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+## The src Attribute
+
+The <img> tag is used to embed an image in an HTML page.
+The src attribute specifies the path to the image to be displayed:
+<img src="img_girl.jpg">
+
+## There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website.
+   Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it,
+you may be in violation of copyright laws. In addition, you cannot control external images;
+it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website.
+   Here, the URL does not include the domain name. If the URL begins without a slash,
+   it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash,
+   it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+## Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+## The width and height Attributes
+
+The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+<img src="img_girl.jpg" width="500" height="600">
+
+## The alt Attribute
+
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+## The style Attribute
+
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+<p style="color:red;">This is a red paragraph.</p>
+
+## The lang Attribute
+
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+The following example specifies English as the language:
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+## The title Attribute
+
+The title attribute defines some extra information about an element.
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+## Always Use Lowercase Attributes
+
+## At W3Schools we always use quotes around attribute values.
+
+## Single or Double Quotes? use any of them according to requirements.
+
+==============================================================================================================================
+
+## Headings
+
+HTML headings are titles or subtitles that you want to display on a webpage.
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Note: Browsers automatically add some white space (a margin) before and after a heading.
+
+## Headings Are Important
+
+Search engines use the headings to index the structure and content of your web pages.
+Users often skim a page by its headings. It is important to use headings to show the document structure.
+
+<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on.
+
+Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+==============================================================================================================================
+
+## TABLES
+
+HTML tables allow web developers to arrange data into rows and columns.
+A table in HTML consists of table cells inside rows and columns.
+
+A simple HTML table:
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+## Table Rows
+
+Each table row starts with a <tr> and ends with a </tr> tag.
+'tr' stands for table row.
+
+## Table Cells
+
+Each table cell is defined by a <td> and a </td> tag.
+'td' stands for table data.
+Everything between <td> and </td> are the content of the table cell.
+
+Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+
+## Table Headers
+
+Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+'th' stands for table header.
+
+==============================================================================================================================
+
+## HTML Links
+
+Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+Note: A link does not have to be text. A link can be an image or any other HTML element!
+
+HTML Links - Syntax
+The HTML <a> tag defines a hyperlink. It has the following syntax:
+<a href="url">link text</a>
+
+By default, links will appear as follows in all browsers:
+
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+## HTML Links - The target Attribute
+
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:
+
+'\_self' - Default. Opens the document in the same window/tab as it was clicked
+'\_blank' - Opens the document in a new window or tab
+'\_parent' - Opens the document in the parent frame
+'\_top' - Opens the document in the full body of the window
+
+## HTML Links - Use an Image as a Link
+
+To use an image as a link, just put the <img> tag inside the <a> tag:
+Example
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+## Link to an Email Address
+
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+Example
+<a href="mailto:someone@example.com">Send email</a>
+
+## Button as a Link
+
+To use an HTML button as a link, you have to add some JavaScript code.
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+Example
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+## Link Titles
+
+The title attribute specifies extra information about an element.
+The information is most often shown as a tooltip text when the mouse moves over the element.
+
+Example
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+
+## Create a Bookmark in HTML
+
+Bookmarks can be useful if a web page is very long.
+To create a bookmark - first create the bookmark, then add a link to it.
+When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+Example
+First, use the id attribute to create a bookmark:
+
+<h2 id="C4">Chapter 4</h2>
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+
+Example
+<a href="#C4">Jump to Chapter 4</a>
+You can also add a link to a bookmark on another page:
+
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+==============================================================================================================================
+
+## HTML Lists
+
+HTML lists allow web developers to group a set of related items in lists.
+
+## Unordered HTML List
+
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+The list items will be marked with bullets (small black circles) by default:
+Example
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+## Ordered HTML List
+
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+The list items will be marked with numbers by default:
+Example
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+## HTML Description Lists
+
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+Example
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+==============================================================================================================================
+
+## FORMS and INPUT TYPES
+
+Description about forms in html
+https://gist.github.com/guillaumegarcia13/e23b221686809234a3a5ed95e49b7c63
+
+Input type cheat sheet->
+https://devhints.io/html-input
+
+https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet
+
+Example
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+List of All <form> Attributes
+
+action - Specifies where to send the form-data when a form is submitted
+autocomplete - Specifies whether a form should have autocomplete on or off
+enctype - Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method - Specifies the HTTP method to use when sending form-data
+name - Specifies the name of the form
+novalidate - Specifies that the form should not be validated when submitted
+rel - Specifies the relationship between a linked resource and the current document
+target - Specifies where to display the response that is received after submitting the form
+
+==============================================================================================================================
+
+## HTML Semantic Elements
+
+Semantic elements = elements with a meaning.
+
+What are Semantic Elements?
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+Semantic Elements in HTML
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+Semantic Elements in HTML
+Below is a list of some of the semantic elements in HTML.
+
+Tag Description
+
+<article>	Defines independent, self-contained content
+<aside>	Defines content aside from the page content
+<details>	Defines additional details that the user can view or hide
+<figcaption>	Defines a caption for a <figure> element
+<figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>	Defines a footer for a document or section
+<header>	Specifies a header for a document or section
+<main>	Specifies the main content of a document
+<mark>	Defines marked/highlighted text
+<nav>	Defines navigation links
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+
+==========================================================================================
+
+## HTML COURSE ENDS
+
+==========================================================================================
+
+## -------MORE TO LEARN, BUT LESS TIME TO CONVEY------
+
+==========================================================================================
+
+HTML -- Interview questions
+
+1. What does HTML stand for?
+2. What are the basic components of an HTML document?
+3. What is the purpose of HTML in web development?
+4. How do you create a heading in HTML?
+5. How do you create a paragraph in HTML?
+6. What are HTML tags and how are they used?
+7. How do you create a hyperlink in HTML?
+8. What is the difference between absolute and relative URLs?
+9. How do you add an image to an HTML document?
+10. What is the purpose of the alt attribute in an image tag?
+11. How do you create a list in HTML? Provide examples of both ordered and unordered lists.
+12. What are HTML forms used for?
+13. How do you create a text input field in an HTML form?
+14. How do you create a drop-down select menu in an HTML form?
+15. What is the purpose of the name attribute in an HTML form input?
+16. How do you create a table in HTML?
+17. How do you specify the background color of an HTML element?
+18. What is the purpose of the id attribute in HTML?
+19. What is the purpose of the <head> section in an HTML document?
+20. What is the difference between an ordered list (<ol>) and an unordered list (<ul>) in HTML?
+21. What is the role of the <img> tag in HTML?
+22. How do you add comments in an HTML document?
+23. How do you create a form in HTML?
+24. What are some common input types used in HTML forms?
+25. What is the purpose of the <div> tag in HTML?
+26. How do you create a line break in HTML?
+27. How do you create a textarea input in an HTML form?
+28. How do you create a basic HTML document structure?
+29. What is the role of the <head> and <body> tags in an HTML document?
+30. How do you validate user input in an HTML form?
+31. How can you embed a video or audio file in an HTML document?
+32. How do you create a hyperlink that opens in a new browser tab or window?
+33. What is the purpose of the <meta> tag in HTML, and what are some common attributes used with it?
+34. What are semantic HTML elements, and why are they important for accessibility and SEO?
+35. How do you create an unordered list with bullet points in HTML?
+36. What is the difference between the <div> and <span> elements in HTML, and when would you use each?
+37. How do you create a drop-down/select menu in HTML?
+38. How do you create a clickable email link in HTML?
+39. How do you add a background image to an HTML element?
+40. What is the purpose of the <header> and <footer> elements in HTML, and how are they used?
+41. How do you create a horizontal line in HTML?
+42. How do you create a checkbox input in an HTML form?
+43. What are some common self-closing tags in HTML, and when would you use them?
