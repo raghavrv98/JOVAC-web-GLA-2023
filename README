@@ -1,0 +1,19 @@
+<!-- For writting readme file use extension .md and for preview in VS code use ctrl + shift + v
+
+# -> For H1 heading
+usign multiple ### for subsequent headings.
+
+triple backticks (```) -> for code blocks.
+
+[linkText](url) to create links
+
+![alt text](image-url) to add images.
+
+* or _ -> for italics
+
+** or __ for bold 
+
+*** or ___ for bold and italics
+
+- for unordered lists 
+1. for ordered list -->
