@@ -1,0 +1,493 @@
+==============================================================================================================================
+
+## <!-- CSS CRASH COURSE -->
+
+## ALL CSS things under oner roof -->
+
+https://quickref.me/css3
+
+## Terminology for CSS
+
+CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation and visual appearance of HTML document.
+
+## Here are some common terminology related to CSS:
+
+Selectors: CSS selectors are patterns used to select elements on an HTML page that you want to style. They target specific elements based on their tag name, class, ID, attributes, or their relationship with other elements.
+
+Properties: CSS properties define the visual characteristics of an element. They specify attributes such as color, font size, margin, padding, background, and more.
+
+Values: CSS values are assigned to properties and determine how a particular property should be applied. For example, a color property might have a value of "red" or "rgb(255, 0, 0)".
+
+Declarations: A declaration consists of a property and its associated value. Declarations are used to set specific styling rules for selected elements.
+
+Rules: CSS rules combine selectors and declarations to define how selected elements should be styled. A rule typically consists of a selector followed by a set of declarations enclosed in curly braces.
+
+Stylesheets: Stylesheets are files that contain CSS code and are linked to HTML documents. They define the styles that should be applied to the HTML elements on a web page.
+
+Classes: CSS classes are used to group elements that share common styles. Multiple elements can have the same class assigned to them, allowing you to apply styles to all of them at once.
+
+IDs: CSS IDs are used to uniquely identify individual elements on a page. IDs can only be assigned to a single element, and they are often used for specific styling or JavaScript interactions.
+
+Inheritance: CSS inheritance allows styles to be automatically applied to an element's children. When a style property is applied to a parent element, its children inherit those styles by default.
+
+Pseudo-classes: Pseudo-classes are used to select and style elements based on their state or position within the document. For example, :hover is a pseudo-class that applies styles when an element is hovered over by the mouse.
+
+Media queries: Media queries allow you to apply different styles based on specific device characteristics, such as screen size, resolution, or orientation. They enable responsive design by adapting the layout and appearance of a page to different devices.
+
+Box model: The box model refers to how elements are structured in CSS. It consists of the content area, padding, border, and margin of an element, which collectively determine its size and spacing.
+
+Flexbox: Flexbox is a CSS layout model that provides a flexible way to arrange and align elements within a container. It allows you to create responsive and dynamically adjusting layouts.
+
+Grid: CSS Grid is a powerful layout system that enables two-dimensional grid-based layouts. It provides fine control over the placement and alignment of elements in both rows and columns.
+
+==============================================================================================================================
+
+## HISTORY of CSS
+
+1994- HÃ¥kon Wium Lie proposed the idea of CSS.
+1996- The first version of CSS was invented.
+1998- CSS 2 was released and work on CSS 3 began.
+Now the latest version we are using is CSS3.
+
+==============================================================================================================================
+
+## Q. Why CSS is invented?
+
+CSS (Cascading Style Sheets) was invented to address the limitations and challenges of styling and layout on the early web.
+
+1. Separation of Content and Presentation: In the early days of the web, HTML (Hypertext Markup Language) was primarily responsible for both structuring the content and defining its visual appearance. This created a problem because making even minor design changes required modifying the HTML code, which could be time-consuming and cumbersome. CSS was developed to separate the presentation (styling and layout) from the content, allowing designers and developers to control the look and feel of a website independently of the HTML structure.
+
+2. Consistency and Reusability: CSS enables the creation of consistent and reusable styles across multiple web pages. By defining styles in a separate CSS file, changes made to the styles are automatically applied to all the pages that reference that CSS file. This promotes consistency in the design and makes it easier to maintain and update the styles across a website.
+
+3. Flexible and Efficient Styling: CSS provides a wide range of styling capabilities that were not available or limited in HTML alone. With CSS, designers can specify font styles, colors, backgrounds, margins, padding, and many other visual properties for individual elements or groups of elements. CSS also supports inheritance, allowing styles to be automatically applied to child elements, reducing the need for redundant code.
+
+==============================================================================================================================
+
+## Q. What does CSS stand for?
+
+CSS (Cascading Style Sheets) is a stylesheet language used for describing the presentation and visual appearance of HTML document.
+It allows web designers and developers to control the layout, formatting, and styling of web pages.
+
+==============================================================================================================================
+
+## Q. What is the purpose of CSS in web development?
+
+CSS (Cascading Style Sheets) serves several key purposes in web development:
+
+Styling and Visual Design: The primary purpose of CSS is to control the visual appearance of web pages. It allows web designers to define the fonts, colors, backgrounds, borders, spacing, and other visual properties of HTML elements. CSS enables precise control over the presentation, ensuring a consistent and appealing design across a website.
+
+Layout and Positioning: CSS provides powerful layout capabilities, allowing developers to control the placement and arrangement of elements on a web page. With CSS, you can create responsive layouts that adapt to different screen sizes and devices. Flexbox and CSS Grid are layout systems within CSS that offer flexible and grid-based layouts, respectively.
+
+Separation of Content and Presentation: CSS promotes the separation of content and presentation, enhancing the maintainability and flexibility of web development. By separating the HTML structure from the visual styling, CSS enables changes to the design without modifying the underlying content. This separation simplifies updates, enables reusability of styles across multiple pages, and improves the overall structure of a website.
+
+Efficiency and Performance: External CSS files can be cached by browsers, resulting in faster subsequent page loads. By consolidating style rules in external CSS files and applying them to multiple pages, developers can reduce the file size of individual HTML pages, leading to improved performance and bandwidth optimization.
+
+==============================================================================================================================
+
+## Q. What are the basic components of an CSS document?
+
+A CSS (Cascading Style Sheets) document consists of several basic components:
+
+Selectors: Selectors are used to target specific HTML elements to which the CSS rules will be applied. Selectors can be based on element types, class names, IDs, attributes, or even their relationship to other elements.
+
+Declarations: Declarations define the visual properties and styles that will be applied to the selected elements. Each declaration consists of a property and a corresponding value, separated by a colon. For example, color: blue; sets the text color to blue.
+
+Properties: CSS properties determine the specific visual aspects or behaviors that are applied to the selected elements. Examples of properties include color, font-size, background, margin, padding, border, and many more. There are numerous properties available to control various aspects of element styling.
+
+Values: CSS values are assigned to properties and determine how the selected elements should be styled. Values can be specific keywords, such as red or bold, or numerical values, such as 12px or 50%. Values can also be complex, such as color codes (#RRGGBB or rgba()), gradients, or URLs.
+
+Comments: CSS allows for comments to be included within the document to provide explanatory or descriptive information. Comments are enclosed between /* and */ and are ignored by the browser.
+
+/* This is a CSS comment */
+
+/* Selectors target specific HTML elements */
+
+/* This whole is called as CSS rule */
+
+h1 {
+/* Declarations define the styles for the selected elements */
+color: blue;
+font-size: 24px;
+}
+
+==============================================================================================================================
+
+## selectors
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+1. Simple selectors (select elements based on name, id, class)
+2. Combinator selectors (select elements based on a specific relationship between them)
+3. Pseudo-class selectors (select elements based on a certain state)
+4. Pseudo-elements selectors (select and style a part of an element)
+5. Attribute selectors (select elements based on an attribute or attribute value)
+
+## Simple selectors
+
+1. ## The CSS element Selector
+
+   The element selector selects HTML elements based on the element name.
+   p {
+   text-align: center;
+   color: red;
+   }
+
+2. ## The CSS id Selector
+
+   The id selector uses the id attribute of an HTML element to select a specific element.
+   The id of an element is unique within a page, so the id selector is used to select one unique element!
+   To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+   #para1 {
+   text-align: center;
+   color: red;
+   }
+   Note: An id name cannot start with a number!
+
+3. ## The CSS class Selector
+
+   The class selector selects HTML elements with a specific class attribute.
+   To select elements with a specific class, write a period (.) character, followed by the class name.
+   .center {
+   text-align: center;
+   color: red;
+   }
+
+   You can also specify that only specific HTML elements should be affected by a class.
+   In this example only <p> elements with class="center" will be red and center-aligned:
+   p.center {
+   text-align: center;
+   color: red;
+   }
+
+   HTML elements can also refer to more than one class.
+   In this example the <p> element will be styled according to class="center" and to class="large":
+
+    <p class="center large">This paragraph refers to two classes.</p>
+
+   Note: A class name cannot start with a number!
+
+4. ## The CSS Universal Selector
+
+   The universal selector (*) selects all HTML elements on the page.  
+   * {
+   text-align: center;
+   color: blue;
+   }
+
+5. ## The CSS Grouping Selector
+   The grouping selector selects all the HTML elements with the same style definitions.
+   In this example we have grouped the selectors from the code above:
+   h1, h2, p {
+   text-align: center;
+   color: red;
+   }
+
+## CSS Combinators
+
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS:
+
+## descendant selector (space)
+
+## child selector (>)
+
+## adjacent sibling selector (+)
+
+## general sibling selector (~)
+
+1. ## Descendant Selector
+
+The descendant selector matches all elements that are descendants of a specified element.
+The following example selects all <p> elements inside <div> elements:
+Example
+div p {
+background-color: yellow;
+}
+
+## 2.Child Selector (>)
+
+The child selector selects all elements that are the children of a specified element.
+The following example selects all <p> elements that are children of a <div> element:
+Example
+div > p {
+background-color: yellow;
+}
+
+3. ## Adjacent Sibling Selector (+)
+
+The adjacent sibling selector is used to select an element that is directly after another specific element.
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+The following example selects the first <p> element that are placed immediately after <div> elements:
+Example
+div + p {
+background-color: yellow;
+}
+
+4. ## General Sibling Selector (~)
+
+The general sibling selector selects all elements that are next siblings of a specified element.
+The following example selects all <p> elements that are next siblings of <div> elements:
+Example
+div ~ p {
+background-color: yellow;
+}
+
+## pseudo Classes
+
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+Syntax
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+property: value;
+}
+
+Anchor Pseudo-classes
+Links can be displayed in different ways:
+
+Example
+/_ unvisited link _/
+a:link {
+color: #FF0000;
+}
+
+/_ visited link _/
+a:visited {
+color: #00FF00;
+}
+
+/_ mouse over link _/
+a:hover {
+color: #FF00FF;
+}
+
+/_ selected link _/
+a:active {
+color: #0000FF;
+}
+
+Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+
+CSS - The :first-child Pseudo-class
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+Match the first <p> element
+In the following example, the selector matches any <p> element that is the first child of any element:
+
+Example
+p:first-child {
+color: blue;
+}
+
+## All CSS Pseudo Classes
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+## Pseudo-elements
+
+What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+For example, it can be used to:
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+
+Syntax
+The syntax of pseudo-elements:
+selector::pseudo-element {
+property: value;
+}
+
+## The ::first-line Pseudo-element
+
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+The following example formats the first line of the text in all <p> elements:
+Example
+p::first-line {
+color: #ff0000;
+font-variant: small-caps;
+}
+
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+## The ::first-letter Pseudo-element
+
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+The following example formats the first letter of the text in all <p> elements:
+Example
+p::first-letter {
+color: #ff0000;
+font-size: xx-large;
+}
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+The following properties apply to the ::first-letter pseudo- element:
+
+font properties
+color properties
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+vertical-align (only if "float" is "none")
+text-transform
+line-height
+float
+clear
+
+## The ::before Pseudo-element
+
+The ::before pseudo-element can be used to insert some content before the content of an element.
+The following example inserts an image before the content of each <h1> element:
+Example
+h1::before {
+content: url(smiley.gif);
+}
+
+## The ::after Pseudo-element
+
+The ::after pseudo-element can be used to insert some content after the content of an element.
+The following example inserts an image after the content of each <h1> element:
+Example
+h1::after {
+content: url(smiley.gif);
+}
+
+## The ::marker Pseudo-element
+
+The ::marker pseudo-element selects the markers of list items.
+The following example styles the markers of list items:
+Example
+::marker {
+color: red;
+font-size: 23px;
+}
+
+## The ::selection Pseudo-element
+
+The ::selection pseudo-element matches the portion of an element that is selected by a user.
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+The following example makes the selected text red on a yellow background:
+Example
+::selection {
+color: red;
+background: yellow;
+}
+
+## Attribute Selectors
+
+The [attribute] selector is used to select elements with a specified attribute.
+The following example selects all <a> elements with a target attribute:
+Example
+a[target] {
+background-color: yellow;
+}
+
+CSS [attribute="value"] Selector
+The [attribute="value"] selector is used to select elements with a specified attribute and value.
+The following example selects all <a> elements with a target="\_blank" attribute:
+Example
+a[target="_blank"] {
+background-color: yellow;
+}
+
+CSS [attribute~="value"] Selector
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":
+Example
+[title~="flower"] {
+border: 5px solid yellow;
+}
+
+CSS [attribute|="value"] Selector
+The [attribute|="value"] selector is used to select elements with the specified attribute, whose value can be exactly the specified value, or the specified value followed by a hyphen (-).
+Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text".
+Example
+[class|="top"] {
+background: yellow;
+}
+
+CSS [attribute^="value"] Selector
+The [attribute^="value"] selector is used to select elements with the specified attribute, whose value starts with the specified value.
+The following example selects all elements with a class attribute value that starts with "top":
+Note: The value does not have to be a whole word!
+Example
+[class^="top"] {
+background: yellow;
+}
+
+CSS [attribute$="value"] Selector
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+The following example selects all elements with a class attribute value that ends with "test":
+Note: The value does not have to be a whole word!  
+Example
+[class$="test"] {
+background: yellow;
+}
+
+CSS [attribute*="value"] Selector
+The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+The following example selects all elements with a class attribute value that contains "te":
+Note: The value does not have to be a whole word!  
+Example
+[class*="te"] {
+background: yellow;
+}
+
+==========================================================================================
+
+## BOX MODEL
+
+The CSS box model is essentially a box that wraps around every HTML element.
+It consists of: margins, borders, padding, and the actual content.
+
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+==========================================================================================
+
+## CSS Layout - The position Property
+
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+
+
+
+==========================================================================================
+
+## -------MORE TO LEARN, BUT LESS TIME TO CONVEY------
+
+==========================================================================================
