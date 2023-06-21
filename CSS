@@ -481,13 +481,179 @@ relative
 fixed
 absolute
 sticky
+
 Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
 
+## static
+
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+This <div> element has position: static;
+Here is the CSS that is used:
+
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+
+## relative
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+This <div> element has position: relative;
+Here is the CSS that is used:
+
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+
+## fixed
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}
+
+## absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+}
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
 
 
+## sticky
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.
+
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+==========================================================================================
+=========
+
+## The display: inline-block Value
+
+The display: inline-block Value
+Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+
+Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+The following example shows the different behavior of display: inline, display: inline-block and display: block:
+
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+NAV BAR EXAMPLE --- https://www.w3schools.com/css/css_inline-block.asp
+
+CSS - Alignment property - https://www.w3schools.com/css/css_align.asp
+
+CSS - float property - https://www.w3schools.com/css/css_float.asp
+
+Difference Between display none and visibility hidden - https://www.w3schools.com/css/tryit.asp?filename=trycss_display
+
+Z-index - https://www.w3schools.com/css/css_z-index.asp
+
+CSS box shadow - https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+
+CSS box-sizing property - https://www.w3schools.com/css/css3_box-sizing.asp
+
+CSS media Queries - https://www.w3schools.com/css/css3_mediaqueries.asp
+
+CSS Flex box - https://www.w3schools.com/css/css3_flexbox.asp
+
+RWD - media Queries - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+CSS Grid - https://www.w3schools.com/css/css_grid.asp
 
 ==========================================================================================
 
 ## -------MORE TO LEARN, BUT LESS TIME TO CONVEY------
 
 ==========================================================================================
+
+CSS Interview Questions
+
+1. What is CSS, and what is its purpose in web development?
+2. Describe the CSS box model and its components.
+3. What are the different CSS selectors? Provide examples.
+4. Explain the difference between class and ID selectors.
+5. What is the difference between display: block, display: inline, and display: inline-block?
+6. What is the CSS float property used for, and how does it work?
+7. Explain the concept of CSS specificity. How is it calculated, and why is it important?
+8. How can you override CSS specificity?
+9.  What is the purpose of the CSS position property? Explain the difference between relative, absolute, fixed, and static positioning.
+10. Explain the CSS z-index property and its role in stacking context.
+11. What is the purpose of the CSS @media rule? How would you use it for responsive design?
+12. What are vendor prefixes in CSS, and why are they used?
+13. How would you vertically center an element in CSS?
+14. How would you create a responsive layout using CSS?
+15. Describe the CSS flexbox layout model and its main properties.
+16. What is the CSS grid layout model, and how does it differ from flexbox?
+17. How would you optimize CSS performance for a website?
+
