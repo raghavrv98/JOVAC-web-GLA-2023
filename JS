@@ -1,0 +1,204 @@
+==============================================================================================================================
+
+## <!-- JS CRASH COURSE -->
+
+## ALL JS things under oner roof -->
+
+https://quickref.me/javascript
+
+## Terminology for JS
+
+Variable: A named container that holds a value.
+
+Function: A reusable block of code that performs a specific task.
+
+Object: A collection of key-value pairs and methods.
+
+Array: An ordered list of values, typically of the same type.
+
+Conditional Statements: Statements that check a condition and perform actions based on the result, such as if-else statements and switch statements.
+
+Loop: A control flow structure that repeats a block of code until a certain condition is met. Common loops include for loops, while loops, and do-while loops.
+
+DOM (Document Object Model): A programming interface that represents the structure of an HTML document, allowing JavaScript to interact with and manipulate the elements of the document.
+
+Event: An action or occurrence, such as a button click or page load, that can be detected by JavaScript and trigger specific code to run.
+
+function addSum(a,b){
+return a + b;
+}
+
+function addDetail (func){
+  let a = 5;
+  return func;
+}
+
+let sum = addDetail(addSum(4,5))
+
+Callback: A function that is passed as an argument to another function and is executed later, typically after an asynchronous operation completes.
+
+Scope: The context in which variables and functions are defined and can be accessed. JavaScript has function scope and block scope.
+
+Closure: A function that has access to variables from its outer (enclosing) scope, even after the outer function has finished executing.
+
+function anotherFunc(){
+  let a = 10;
+return function addSum(){
+  let b = 20;
+return function(){
+  let c = 30;
+  console.log(a,b,c);
+};
+}
+}
+
+anotherFunc()
+
+Prototype: An object used as a blueprint for creating other objects, allowing inheritance and the sharing of properties and methods.
+
+Asynchronous: Operations that don't block the execution of code and allow other code to run concurrently. Common asynchronous operations in JavaScript include fetching data from an API or performing file I/O.
+
+## HISTORY of JS
+
+JavaScript (JS) is a programming language that was created in the mid-1990s by Brendan Eich while he was working at Netscape Communications Corporation. Initially, it was known as LiveScript and was developed as a scripting language for the Netscape Navigator web browser.
+
+In December 1995, Netscape partnered with Sun Microsystems and renamed the language to JavaScript to leverage the popularity of Java at that time. However, despite the name, JavaScript is fundamentally different from Java and is not a subset or variant of it.
+
+JavaScript gained significant attention and adoption as it provided a way to add interactivity to web pages. It allowed developers to manipulate the Document Object Model (DOM), enabling dynamic content updates and user interaction within web browsers.
+
+In 1996, Netscape submitted JavaScript to Ecma International, a standards organization, to establish an industry-standard scripting language specification. The standardized version was named ECMAScript, taking its name from the organization's name. The first edition of the ECMAScript specification, ECMAScript 1 (ES1), was published in 1997.
+
+Over the years, several new editions of the ECMAScript specification have been released, each introducing new features, syntax enhancements, and improvements. Some notable editions include ECMAScript 3 (ES3) in 1999, ECMAScript 5 (ES5) in 2009, ECMAScript 6 (ES6) in 2015 (which introduced significant changes and new syntax), ECMAScript 2016 (ES2016), ECMAScript 2017 (ES2017), and ECMAScript 2018 (ES2018).
+
+ES6 (also known as ES2015) marked a major milestone for JavaScript, introducing features such as arrow functions, classes, modules, enhanced object literals, and more. It brought significant improvements to the language's capabilities and made JavaScript more powerful and expressive.
+
+The rapid evolution of JavaScript led to its increasing popularity, not only in the browser environment but also on server-side platforms. Node.js, an open-source JavaScript runtime built on Chrome's V8 JavaScript engine, emerged in 2009, allowing developers to run JavaScript on servers and build scalable web applications.
+
+In recent years, JavaScript has continued to evolve, with new features and enhancements being added regularly. The latest major version of the ECMAScript specification, ECMAScript 2022 (ES2022), was released in June 2022 and introduced features like record and tuple types, pattern matching, and more.
+
+JavaScript has become the de facto language for web development, powering countless websites and web applications. It is also widely used in other domains, such as mobile app development (using frameworks like React Native and Ionic), desktop application development (using frameworks like Electron), and even in emerging technologies like machine learning (with libraries like TensorFlow.js).
+
+The history of JavaScript showcases its journey from a simple scripting language for web browsers to a versatile and powerful programming language used across various platforms and domains.
+
+## Q. Why JS is invented?
+
+JavaScript was invented to provide a scripting language for web browsers that could enhance the interactivity and functionality of web pages.
+
+## Dynamic Web Pages: 
+In the mid-1990s, web pages were predominantly static, consisting of static HTML content. JavaScript was invented to introduce interactivity and dynamic behavior to web pages. It allowed developers to manipulate the DOM, update content dynamically, respond to user actions, and create more engaging and interactive web experiences.
+
+## Client-Side Scripting:
+JavaScript was designed to be executed on the client-side, meaning it runs within the web browser of the user. This enables the web browser to handle the processing and execution of code, reducing the reliance on server-side processing for every interaction. This client-side execution capability allows for faster and more responsive web applications.
+
+## User Interaction: 
+JavaScript enables developers to capture and respond to user actions on web pages, such as button clicks, form submissions, mouse movements, and keyboard input. It provides the ability to validate user input, perform calculations, and dynamically update the page content based on user interactions. This helps create a more interactive and user-friendly web experience.
+
+## DOM Manipulation:
+JavaScript provides APIs (Application Programming Interfaces) to interact with the Document Object Model (DOM), which represents the structure of an HTML page. With JavaScript, developers can dynamically modify the DOM elements, create, delete, or modify HTML elements, apply CSS styles, and handle events associated with DOM elements. This allows for the creation of dynamic and responsive web applications.
+
+## Cross-Browser Compatibility: 
+JavaScript was created to work across different web browsers, providing a consistent scripting language that could be executed on various platforms. This cross-browser compatibility has been crucial in enabling JavaScript to become a universal language for web development.
+
+## Web Application Development: 
+JavaScript's evolution and the introduction of frameworks like Angular, React, and Vue.js have made it a powerful language for building complex web applications. It enables the development of single-page applications (SPAs) where the entire application runs within the browser, reducing the need for page reloads and enhancing the user experience
+
+## Q. What are the basic components of an JS document?
+
+## Script Tag:
+To include JavaScript code within an HTML document, you use the <script> tag. 
+It can be placed either in the <head> section or at the end of the <body> section of an HTML document. 
+The script tag can have the following attributes:
+
+src: Specifies the source file of an external JavaScript file to be included.
+type: Specifies the MIME type of the script. For JavaScript, the value should be "text/javascript".
+
+JavaScript Code: The JavaScript code itself is written between the opening and closing <script> tags. 
+This is where you write your JavaScript statements, functions, variables, and other code.
+
+## Variables: 
+JavaScript allows you to declare variables using the var, let, or const keywords. Variables are used to store and manipulate data. For example:
+
+var name = "John";
+let age = 25;
+const PI = 3.14;
+
+## Functions: 
+Functions in JavaScript are reusable blocks of code that perform a specific task. They can be declared using the function keyword and can have parameters and a return value. For example:
+
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+## Events: 
+JavaScript allows you to handle various events that occur in the browser, such as button clicks, form submissions, mouse movements, and keyboard input. Event handlers are functions that are executed when a specific event occurs. For example:
+
+document.getElementById("myButton").addEventListener("click", function() {
+  alert("Button clicked!");
+});
+
+## DOM Manipulation:
+JavaScript provides APIs to interact with the Document Object Model (DOM) of an HTML document. You can access and modify HTML elements, apply CSS styles, add or remove elements dynamically, and update the content of the page. For example:
+
+document.getElementById("myElement").innerHTML = "New content";
+
+## Control Flow: 
+JavaScript includes various control flow statements that allow you to control the execution of code based on conditions or loops. Common control flow statements include if statements, for loops, while loops, and switch statements.
+
+## Operators: 
+Operators are symbols that perform operations on values or variables. JavaScript supports various types of operators, such as arithmetic operators (+, -, *, /), comparison operators (>, <, ===, etc.), logical operators (&&, ||, !), and more.
+
+## local storage
+
+Capacity: Local Storage provides a larger storage capacity compared to cookies.
+Lifespan: The data stored in Local Storage persists even after the browser is closed and is available for future sessions.
+Usage: It is commonly used to store user preferences, settings, and cached data. It is ideal for storing data that needs to be available for an extended period.
+
+## session storage
+
+Capacity: Session Storage has a similar capacity to Local Storage.
+Lifespan: The data stored in Session Storage is available only for the duration of the browser session. Once the browser is closed, the data is cleared.
+Usage: Session Storage is useful for storing temporary data that is specific to a particular session. It is often used for maintaining state or storing data that is needed only during a single browsing session.
+
+## cookies
+
+Capacity: Cookies have a much smaller storage capacity compared to Local Storage and Session Storage.
+Lifespan: Cookies can have an expiration date set, allowing them to persist for a specified period. However, they can also be set to expire when the browser session ends.
+Usage: Cookies are commonly used for various purposes, such as storing user authentication information, tracking user behavior, and maintaining session data. They are often used for tasks that require information to be sent back to the server with each request.
+
+## ARRAY METHODS
+
+push()
+pop()
+join()
+length
+concat()
+filter()
+find()
+map()
+reduce()
+includes()
+indexOf()
+isArray()
+slice()
+
+
+
+## data types
+https://www.w3schools.com/js/js_datatypes.asp
+
+## JS variables
+https://www.w3schools.com/js/js_variables.asp
+https://www.w3schools.com/js/js_let.asp
+https://www.w3schools.com/js/js_const.asp
+
+## scopes and hoisting
+https://www.w3schools.com/js/js_hoisting.asp
+
+## strict mode
+https://www.w3schools.com/js/js_strict.asp
+
+## this keyword
+https://www.w3schools.com/js/js_this.asp
+
+## closures
+https://www.w3schools.com/js/js_function_closures.asp
