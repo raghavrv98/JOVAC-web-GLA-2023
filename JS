@@ -169,19 +169,24 @@ Usage: Cookies are commonly used for various purposes, such as storing user auth
 
 push()
 pop()
+unshift()
+shift()
 join()
 length
 concat()
-filter()
-find()
-map()
-reduce()
+slice()
+splice()
 includes()
 indexOf()
 isArray()
-slice()
+
+map()
+filter()
+find()
+reduce()
 
 
+https://www.w3schools.com/jsref/jsref_obj_array.asp
 
 ## data types
 https://www.w3schools.com/js/js_datatypes.asp
@@ -202,3 +207,169 @@ https://www.w3schools.com/js/js_this.asp
 
 ## closures
 https://www.w3schools.com/js/js_function_closures.asp
+
+## functions statement
+## function defination
+## function declaration
+
+function addsum(){
+
+}
+
+## function invocation
+## function calling
+
+addSum()
+
+## Functions 
+
+## arrow functions
+
+const sample = () =>{
+  
+}
+
+function keyword is not there in arrow function
+own this is not applicable in arrow function
+hoisting is not performed in arrow funcion
+
+## function expression
+
+const sample = () =>{
+  
+}
+
+or 
+
+const sample = function(){
+  
+}
+
+## named function expression
+
+function sample (){
+
+}
+
+const sample = () =>{
+
+}
+
+## methods vs functions
+
+obj = {
+  function1 : () =>{
+
+  }
+}
+
+obj.function1()
+
+const sample = function sampleName () {
+
+}
+
+## IIFE
+Immediately invoked function expression
+
+(function() {
+  
+})();
+
+## anonymous function
+function() {
+  
+}
+
+## callback functions
+
+function performOperation(callback) {
+  // do something
+  callback();
+}
+
+performOperation(function() {
+  console.log("Callback function executed.");
+});
+
+## higher order functions
+
+map
+filter
+reduce
+find
+findIndex
+sort
+
+
+## REST and Spread operator
+
+REST 
+function sum(numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4, 5)); // Output: 15
+
+SPREAD 
+
+const numbers = [1, 2, 3];
+console.log(...numbers); // Output: 1 2 3
+
+merging - const combined = [...arr1, ...arr2]; 
+copying - const copy = [...original];
+ 
+## set timeout and set interval
+
+setTimeout(() => {
+  console.log('Delayed message');
+}, 2000); // Delay of 2000 milliseconds (2 seconds)
+
+let counter = 0;
+const intervalId = setInterval(() => {
+  console.log('Interval message');
+  counter++;
+  if (counter === 5) {
+    clearInterval(intervalId); // Stop the interval after 5 iterations
+  }
+}, 1000); // Interval of 1000 milliseconds (1 second)
+
+## destructuring in js
+
+const person = {
+  name: 'John Doe',
+  age: 30,
+  country: 'USA'
+};
+
+const { name: Fullname, age, country } = person;
+
+console.log(Fullname); // Output: John Doe
+console.log(age); // Output: 30
+console.log(country); // Output: USA
+
+## deep copy and shallow copy
+
+In summary, a shallow copy creates a new object or array that shares references to nested objects, while a deep copy creates a completely independent copy, including all nested objects or arrays. The appropriate choice between shallow and deep copy depends on your specific use case and the desired behavior of your program.
+
+
+DEEP COPY 
+const originalArray = [1, 2, 3];
+const deepCopy = [...originalArray];
+
+deepCopy.push(4);
+
+console.log(originalArray); // Output: [1, 2, 3]
+console.log(deepCopy); // Output: [1, 2, 3, 4]
+
+SHALLOW COPY
+const originalArray = [1, 2, 3];
+const shallowCopy = originalArray;
+
+shallowCopy.push(4);
+
+console.log(originalArray); // Output: [1, 2, 3, 4]
+console.log(shallowCopy); // Output: [1, 2, 3, 4]
+
+## Mistakes in JS
+https://www.w3schools.com/js/js_mistakes.asp
